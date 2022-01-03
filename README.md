@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AlurDesign
 - 👀 I’m interested in design
 - 🌱 I’m currently learning JS
-- 💞️ I’m looking to collaborate on Neon X and other projects by Dot!
+- 💞️ I’m looking to collaborate on my apps
 - 📫 You can reach me on my Twitter
 
 <!---
