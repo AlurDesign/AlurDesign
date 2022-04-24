@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  </body>
+  <script>
+    const Routes = ["/", "/Projects", "/Blog", "/Read", "/About"];
+    if(Routes.includes(window.location.pathname)){
+        window.location.href = `https://${window.location.hostname}/?Route=${window.location.pathname}`;
+    }
+    else {
+        document.body.innerHTML = `
+        <h1>
+            :(
+            <br>
+            404
+        </h1>
+        `
+    }
+    </script>
+</html>
