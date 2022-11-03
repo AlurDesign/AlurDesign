@@ -39,6 +39,8 @@
     --Mono-Neutral500: #75838A;
     --Mono-Neutral400: #5E696E;
     --Mono-Neutral100: #171A1C;
+    --Mono-Blue500: #006AFF;
+    --Mono-Blue600: #3388FF;
 
     /* Animations & transitions */
     --Mono-AnimationSlideDown: Mono-AnimationSlideDown 250ms;

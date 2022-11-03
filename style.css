@@ -148,7 +148,7 @@ footer {
     background: linear-gradient(113.36deg, #00C2FF 0%, #9E00FF 100%);
 }
 .SiteMainCard404 {
-    background: linear-gradient(135deg, #45A6FF 0%, #0066FF 100%);
+    background: linear-gradient(135deg, var(--Mono-Blue600) 0%, var(--Mono-Blue500) 100%);
 }
 
 a {color: var(--TextColor);}
@@ -180,6 +180,10 @@ a {color: var(--TextColor);}
 .SitePortfolioItem {
     display: flex;
     align-items: center; justify-content: center;
+}
+.SitePortfolioItem * {
+    /* Temporary dirty fix */
+    color: white;
 }
 .SitePortfolioItemContent {
     min-width: 30vw;
