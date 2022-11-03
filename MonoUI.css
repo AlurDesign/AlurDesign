@@ -1,0 +1,79 @@
+/* MonoUI Base Styles v0.10 */
+:root {
+    /* Base variables for the font size, styles, etc*/
+    --Mono-FontFamilyHeader: var(--Mono-FontFamilyBody);
+    --Mono-FontFamilyBody: 'Cascadia Code', 'Consolas', 'Courier New', Courier, monospace;
+    --Mono-FontFamilyCode: var(--Mono-FontFamilyBody);
+    --Mono-BorderRadiusControls: 0.25rem; /* Used for most controls, such as buttons */
+    --Mono-BorderRadiusSurface: 0.5rem; /* Used for large elements such as sheets or dialogs */
+    --Mono-BorderRadiusFull: 100vw; /* Used for fully round surfaces, such as pills */
+
+    --Mono-BorderThin: 1px; /* Only used for fixed controls such as headers, footers, or 
+                               navigation views*/
+    --Mono-Border: 2px;
+
+    --Mono-PaddingLongControl: 0.75rem 2rem; /* Buttons, textboxes, etc. */
+    --MonoPaddingSquareControl: 0.5rem; /* Checkboxes, radio buttons, switches */
+
+    /* Default color variables */
+    --Mono-MainBackgroundColor: #F1F3F3;
+    --Mono-MainColor: var(--Mono-Neutral100);
+    --Mono-AlternateColor: var(--Mono-Neutral900);
+    --Mono-MutedColor: var(--Mono-Neutral600);
+    --Mono-DisabledColor: var(--Mono-Neutral700);
+    --Mono-SubtleColor: rgba(23, 26, 28, 0.08);
+    --Mono-SubtleBorderColor: rgba(23, 26, 28, 0.2);
+
+    --Mono-BlurLowColor: rgba(23, 26, 28, 0.6); 
+    --Mono-BlurMediumColor: rgba(23, 26, 28, 0.7);
+    --Mono-BlurHighColor:rgba(23, 26, 28, 0.8);
+    /*These never change anyway*/
+    --Mono-ShadowLowColor: rgba(23, 26, 28, 0.12);
+    --Mono-ShadowColor:rgba(23, 26, 28, 0.2);
+    --Mono-OverlayColor: rgba(23, 26, 28, 0.3);
+
+    /* Default color palette variables */
+    --Mono-Neutral900: #E4E7E7;
+    --Mono-Neutral700: #ACB5B9;
+    --Mono-Neutral600: #919CA1;
+    --Mono-Neutral500: #75838A;
+    --Mono-Neutral400: #5E696E;
+    --Mono-Neutral100: #171A1C;
+
+    /* Animations & transitions */
+    --Mono-AnimationSlideDown: Mono-AnimationSlideDown 250ms;
+    --Mono-AnimationMediumScaleDown: Mono-AnimationMediumScaleDown 200ms ease-in-out forwards;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Mono-MainBackgroundColor: #F1F3F3;
+        --Mono-MainColor: var(--Mono-Neutral900);
+        --Mono-AlternateColor: var(--Mono-Neutral100);
+        --Mono-MutedColor: var(--Mono-Neutral400);
+        --Mono-DisabledColor: var(--Mono-Neutral300);
+        --Mono-SubtleColor: rgba(227, 230, 232, 0.08);
+        --Mono-SubtleBorderColor: rgba(227, 230, 232, 0.2)
+    }
+}
+body {
+    font-family: var(--Mono-FontFamilyBody)
+}
+h1, h2, h3 {
+    font-family: var(--Mono-FontFamilyHeader);
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+@keyframes Mono-AnimationSlideDown
+{
+  from {transform: translateY(-25%); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+@keyframes Mono-AnimationMediumScaleDown {
+    0% {transform: scale(0.95)}
+    100% {transform: scale(1.05);}
+}
