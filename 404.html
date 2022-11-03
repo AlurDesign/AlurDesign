@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-  </body>
-  <script>
-    const Routes = ["/", "/Projects", "/Blog", "/Read", "/About"];
-    if(Routes.includes(window.location.pathname)){
-        window.location.href = `https://${window.location.hostname}/?Route=${window.location.pathname}`;
-    }
-    else {
-        document.body.innerHTML = `
-        <h1>
-            :(
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub">
+    <meta name="description" content="A place for me to post my thoughts and work."> 
+    <link rel="stylesheet" href="style.css">
+    <title>Jakub's site</title>
+</head>
+<body>
+    <nav class="SiteNav">
+        <a class="SiteNavLinkSelected" href="/">Home</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/about.html">About me</a>
+    </nav>
+    <main class="SiteMainCard SiteMainCardHome">
+        <h2>Hello there 👋</h2>
+        <h1>I'm Jakub, a UI/UX designer and a developer.
             <br>
-            404
+            I post my random thoughts here sometimes.
         </h1>
-        `
-    }
-    </script>
+        <button class="MainButton">About me</button>
+        <button>Portfolio</button>
+    </main>
+    <footer>
+        Love from Poland 🇵🇱
+    </footer>
+</body>
 </html>
