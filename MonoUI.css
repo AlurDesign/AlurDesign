@@ -31,6 +31,8 @@
     --Mono-ShadowLowColor: rgba(23, 26, 28, 0.12);
     --Mono-ShadowColor:rgba(23, 26, 28, 0.2);
     --Mono-OverlayColor: rgba(23, 26, 28, 0.3);
+    
+    --Mono-ShadowLight: 0px 1px 4px var(--Mono-ShadowLowColor);
 
     /* Default color palette variables */
     --Mono-Neutral900: #E4E7E7;
