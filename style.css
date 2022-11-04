@@ -1,5 +1,6 @@
 :root {
     --ArtSize: 30vw;
+    --Site-ArtLargeSize: 50vw;
     --MainBackground: #F5F5F5;
     --Border1: rgba(0,0,0,0.08);
     --Layer1: rgba(0,0,0,0.08);
@@ -133,13 +134,14 @@ footer {
     padding: 16px 24px;
     bottom: 0;
 }
-footer div {
+
+.SiteFooterSocialLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
 }
-.SiteSocialLink {
+.SiteFooterSocialLink {
     text-decoration: none;
 }
 .MainButton {
@@ -182,7 +184,8 @@ a {color: var(--TextColor);}
         flex-direction: column;
     }
     :root {
-        --ArtSize: 80vw
+        --ArtSize: 80vw;
+        --Site-ArtLargeSize: 80vw;
     }
 }
 .SitePortfolioItem {
@@ -223,4 +226,37 @@ a {color: var(--TextColor);}
     padding: 8px 16px;
     border: 2px solid var(--Mono-MainColor);
     border-radius: 100vw;
+}
+/* Reading Experience (aka portfolio + blog posts) */
+.SiteReadingHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SiteReadingHeaderSingleImage {
+    border-radius: var(--Mono-BorderRadiusControls);
+    box-shadow: var(--Mono-ShadowMedium);
+    margin-bottom: -5%;
+    width: var(--Site-ArtLargeSize);
+    aspect-ratio: "3/2";
+}
+.SiteTagsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+/* Easter egg */
+.SiteEasterEgg {
+    position: relative;
+}
+.SiteEasterEggSurprise {
+    display: none;
+}
+.SiteEasterEgg:focus .SiteEasterEggSurprise{
+    display: block;
+    position: absolute;
+    top: -100%;
+    padding: 8px;
+    background-color: #FFFFFF;
+    box-shadow: var(--Mono-ShadowLight);
 }

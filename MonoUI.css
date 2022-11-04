@@ -33,7 +33,7 @@
     --Mono-OverlayColor: rgba(23, 26, 28, 0.3);
     
     --Mono-ShadowLight: 0px 1px 4px var(--Mono-ShadowLowColor);
-
+    --Mono-ShadowMedium: 0px 4px 12px var(--Mono-ShadowColor);
     /* Default color palette variables */
     --Mono-Neutral900: #E4E7E7;
     --Mono-Neutral700: #ACB5B9;
